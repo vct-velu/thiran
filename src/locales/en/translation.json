@@ -1,0 +1,12 @@
+{
+  "home_page": {
+    "title": "Thiran",
+    "description": "description"
+  },
+  "not_found_page": {
+    "title": "404 Page Not Found",
+    "description": "description",
+    "page_not_found": "Page not found",
+    "ooops": "Ooops"
+  }
+}

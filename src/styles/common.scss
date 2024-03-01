@@ -1,0 +1,42 @@
+@mixin adaptive($max-width) {
+    @media screen and (max-width: #{$max-width}px) {
+      @content;
+    }
+  }
+  
+  @mixin big_tablet {
+    @media screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media screen and (max-width: 834px) {
+      @content;
+    }
+  }
+  
+  @mixin phone {
+    @media screen and (max-width: 550px) {
+      @content;
+    }
+  }
+
+
+  @mixin Roboto($size: 20px, $color: #2b2b2b, $weight: 500, $height: 150%) {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+  }
+
+  @mixin Montserrat($size: 20px, $color: #2b2b2b, $weight: 500, $height: 150%) {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+  }

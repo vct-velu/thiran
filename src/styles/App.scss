@@ -1,0 +1,62 @@
+@import './common';
+@import './theme.scss';
+
+/** Roboto Normal **/
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+/** Roboto Medium **/
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Medium.ttf');
+}
+/** Roboto Semi-Bold **/
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+/** Roboto Bold **/
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+/** Montserrat Normal **/
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+/** Montserrat Medium **/
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+/** Montserrat Bold **/
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, Roboto;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
