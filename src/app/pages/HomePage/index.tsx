@@ -1,6 +1,9 @@
 import React, { memo } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+
+import { HeaderTypesEnum } from '_constants/headerConstants';
+
+import CommonPageWrapper from '../utils/Wrappers/CommonPageWrapper';
 
 import './style.scss';
 
@@ -10,12 +13,13 @@ const HomePage: React.FC<HomePageProps> = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <Helmet>
-        <title>{t('home_page.title')}</title>
-        <meta name="description" content={t('home_page.description')} />
-      </Helmet>
-    </>
+    <CommonPageWrapper
+      className="home_page"
+      title={t('home_page.title')}
+      description={t('home_page.description')}
+      withOutlet={false}
+      headerType={HeaderTypesEnum.UN_AUTH}
+    ></CommonPageWrapper>
   );
 };
 export default memo(HomePage);

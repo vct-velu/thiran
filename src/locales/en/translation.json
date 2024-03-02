@@ -8,5 +8,9 @@
     "description": "description",
     "page_not_found": "Page not found",
     "ooops": "Ooops"
+  },
+  "header": {
+    "about_tech": "About Tech",
+    "log_in": "Log In"
   }
 }

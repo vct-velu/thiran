@@ -4,7 +4,6 @@ import { initReactI18next } from 'react-i18next';
 // import LanguageDetector from 'i18next-browser-languagedetector';
 
 import { resourcesEn } from './en/index.js';
-import { resourcesEs } from './es/index.js';
 import { resourcesAr } from './ar/index.js';
 import { resourcesTa } from './ta/index.js';
 
@@ -23,7 +22,6 @@ export const i18n = i18next
     defaultNS: 'translation',
     resources: {
       en: resourcesEn,
-      es: resourcesEs,
       ar: resourcesAr,
       ta: resourcesTa,
     },

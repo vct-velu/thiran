@@ -3,15 +3,15 @@ import 'react-app-polyfill/stable';
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-
 // Use consistent styling
 import 'sanitize.css/sanitize.css';
+import { HelmetProvider } from 'react-helmet-async';
+import { BrowserRouter } from 'react-router-dom';
 
 import { App } from 'app';
 
-import { HelmetProvider } from 'react-helmet-async';
-import { BrowserRouter } from 'react-router-dom';
 import { store } from 'store/configureStore';
+
 import reportWebVitals from 'reportWebVitals';
 
 // Initialize languages

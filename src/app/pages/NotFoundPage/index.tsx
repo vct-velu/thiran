@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+
 import PageNotFoundIcon from 'app/components/Icons/PageNotFoundIcon';
 
 import './style.scss';
