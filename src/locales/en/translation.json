@@ -12,5 +12,11 @@
   "header": {
     "about_tech": "About Tech",
     "log_in": "Log In"
+  },
+  "footer": {
+    "footer_left_privacy_text": "©2024 Velmurugan. All rights reserved.",
+    "about_tech": "About Tech",
+    "terms_use": "Terms of Use",
+    "privacy_policy": "Privacy Policy"
   }
 }

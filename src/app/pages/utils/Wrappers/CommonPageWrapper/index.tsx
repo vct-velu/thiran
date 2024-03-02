@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { HeaderTypesEnum } from '_constants/headerConstants';
 
 import Header from 'app/components/Header';
+import Footer from 'app/components/Footer';
 
 import './style.scss';
 
@@ -40,6 +41,7 @@ const CommonPageWrapper: React.FC<CommonPageWrapperProps> = ({
           {withOutlet && <Outlet />}
         </div>
       </main>
+      <Footer />
     </>
   );
 };

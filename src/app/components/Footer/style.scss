@@ -1,0 +1,71 @@
+@import '../../../styles/common.scss';
+
+.footer_wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  z-index: 2;
+
+  &.hidden {
+    @include phone() {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      .footer_wrapper_desktop {
+        display: none;
+      }
+    }
+  }
+
+  &_desktop {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding-left: 58px;
+    padding-right: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--background);
+    border-top: 1px solid var(--border);
+    box-shadow: 2px 2px 4px var(--borderLight), 10%;
+
+    @include phone() {
+      flex-direction: column-reverse;
+      padding: 10px 0px;
+      gap: 10px;
+    }
+
+    .poweredBy {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 119.13px;
+      margin: 10px auto;
+      gap: 4px;
+      @include phone {
+        margin: 0px auto;
+      }
+
+      p {
+        @include Roboto(16px, var(--text), 400, 150%);
+
+        @include phone() {
+          @include Roboto(14px, var(--text), 500, 150%);
+        }
+      }
+    }
+
+    a,p{
+      @include Roboto(16px, var(--text), 400, 150%);
+
+      @include phone() {
+        @include Roboto(14px, var(--text), 500, 150%);
+      }
+    }
+  }
+}

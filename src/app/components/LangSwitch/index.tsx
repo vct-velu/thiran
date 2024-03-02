@@ -37,7 +37,7 @@ const LangSwitch: React.FC<LangSwitchProps> = ({ classNames }) => {
     <div className={clsx('lang_switch', classNames)}>
       <div className="lang_switch__btn" onClick={() => setIsOpenLang(!isOpenLang)}>
         <div className={clsx('lang_switch__btn_icon', { active: isOpenLang })}>
-          <WorldIcon />{' '}
+          <WorldIcon height="20" />
         </div>
       </div>
       {isOpenLang && (

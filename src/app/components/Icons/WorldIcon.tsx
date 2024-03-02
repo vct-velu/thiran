@@ -2,13 +2,14 @@ import React, { memo } from 'react';
 
 interface WorldIconProps {
   className?: string;
+  height?: string;
 }
-const WorldIcon: React.FC<WorldIconProps> = ({ className }) => {
+const WorldIcon: React.FC<WorldIconProps> = ({ className, height }) => {
   return (
     <svg
       className={className}
-      width="18"
-      height="17"
+      // width="18"
+      height={height || '17'}
       viewBox="0 0 18 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
