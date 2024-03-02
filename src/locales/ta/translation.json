@@ -1,3 +1,16 @@
 {
-  "title": "welcome"
+  "home_page": {
+    "title": "திரன்",
+    "description": "விளக்கம்"
+  },
+  "not_found_page": {
+    "title": "404 பக்கம் கிடைக்கவில்லை",
+    "description": "விளக்கம்",
+    "page_not_found": "பக்கம் கிடைக்கவில்லை",
+    "ooops": "அச்சச்சோ"
+  },
+  "header": {
+    "about_tech": "தொழில்நுட்பம் பற்றி",
+    "log_in": "உள்நுழைய"
+  }
 }

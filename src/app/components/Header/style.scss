@@ -1,0 +1,13 @@
+@import '../../../styles/common.scss';
+
+header {
+    height: 4rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--background);
+    z-index: 2;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 2px 2px 4px var(--borderLight), 10%;
+}

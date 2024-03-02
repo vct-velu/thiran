@@ -4,6 +4,7 @@ export type colorPalette = {
   textSecondary: string;
   background: string;
   backgroundVariant: string;
+  backgroundInverse: string;
   border: string;
   borderLight: string;
 };
@@ -13,7 +14,7 @@ export type Theme = {
   dark: colorPalette;
 };
 
-export type ThemeKeyType = keyof Theme | 'system';
+export type ThemeKeyType = keyof Theme;
 
 export interface ThemeState {
   selected: ThemeKeyType;

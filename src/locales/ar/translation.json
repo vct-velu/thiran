@@ -1,3 +1,16 @@
 {
-  "title": "welcome"
+  "home_page": {
+    "title": "ثيران",
+    "description": "وصف"
+  },
+  "not_found_page": {
+    "title": "404 الصفحة غير موجودة",
+    "description": "وصف",
+    "page_not_found": "الصفحة غير موجودة",
+    "ooops": "عفوا"
+  },
+  "header": {
+    "about_tech": "حول التكنولوجيا",
+    "log_in": "تسجيل الدخول"
+  }
 }

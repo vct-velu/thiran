@@ -6,6 +6,8 @@ import { Dispatch, combineReducers } from '@reduxjs/toolkit';
 
 import { InjectedReducersType } from '../../utils/types/injector-typings';
 
+import themeSlice from './theme';
+
 /**
  * Merges the main reducer with the router state and dynamically injected reducers
  */
@@ -14,8 +16,10 @@ export function createReducer(injectedReducers: InjectedReducersType = {}) {
 
   return combineReducers({
     ...injectedReducers,
-    emptyReducer: (state = {}, action) => state,
+    theme: themeSlice.reducer,
   });
 }
 
-export const onUserDataClean = (dispatch: Dispatch) => {};
+export const onUserDataClean = (dispatch: Dispatch) => {
+  dispatch(themeSlice.actions.resetState());
+};

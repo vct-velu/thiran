@@ -26,6 +26,52 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-undef': 'off',
     'react/display-name': 0,
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+        pathGroups: [
+          {
+            pattern: '{_constants,_constants/}**',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '{_types/,_types}**',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '{_services,_services/}**',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '{app,app/}**',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: 'store/**',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: 'redux/**',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '*.scss',
+            group: 'index',
+            patternOptions: { matchBase: true },
+            position: 'after',
+          },
+        ],
+        warnOnUnassignedImports: true,
+        'newlines-between': 'always',
+      },
+    ],
   },
   overrides: [
     {

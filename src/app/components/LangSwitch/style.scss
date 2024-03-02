@@ -1,0 +1,65 @@
+@import '../../../styles/common.scss';
+
+.lang_switch {
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    &_icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--background);
+      border-radius: 50%;
+      svg {
+        path {
+          fill: var(--backgroundInverse);
+        }
+      }
+      &.active {
+        background-color: var(--backgroundVariant);
+      }
+      @include phone(){
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  &__arrow {
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+  &__wrapper {
+    background: var(--background);
+    border: 1px solid var(--border);
+    box-shadow: 2px 2px 4px var(--borderLight), 10%;
+    border-radius: 4px;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    div {
+      width: 178px;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      @include Roboto(16px, var(--text), 400, 150%);
+      letter-spacing: -0.01em;
+      &:nth-last-child(1) {
+        border: 0;
+      }
+    }
+    &_arrow {
+      font-size: 12px;
+      margin-left: auto;
+    }
+  }
+}

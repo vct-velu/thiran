@@ -1,10 +1,30 @@
-export enum HeaderTypes {
-  notFound,
+import { TFunction } from 'i18next';
+
+export enum HeaderTypesEnum {
+  UN_AUTH,
+  AUTH,
 }
 
 export const platformLanguageChoices = [
   { value: 'en', translate: 'English', initName: 'US' },
   { value: 'ar', translate: 'Arabic', initName: 'عرب' },
-  { value: 'es', translate: 'Spanish', initName: 'Español' },
   { value: 'ta', translate: 'Tamil', initName: 'தமிழ்' },
 ];
+
+export interface HeaderTabs {
+  name: string;
+  path: string;
+}
+
+// export const AuthenticatedHeaderTabs = (t: TFunction): HeaderTabs[] => [
+//   {
+//     name: t('home'),
+//     path: '/',
+//   },
+//   {
+//     name: t('tech_stack'),
+//     path: '/tech_stack',
+//   },
+// ];
+
+export const unauthenticatedHeaderTabs = (t: TFunction): HeaderTabs[] => [];

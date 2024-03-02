@@ -1,0 +1,43 @@
+@import '../../../../styles/common.scss';
+
+.home_tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    @include phone() {
+      display: none;
+    }
+    &_item {
+      padding: 7px 7px 7px 9px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      @include phone() {
+        gap: 6px;
+        width: 100%;
+        justify-content: center;
+      }
+      &__text {
+        @include Montserrat(16px, var(--text), 400, 150%);
+        @include phone() {
+          @include Montserrat(14px, var(--text), 400, 150%);
+        }
+        &.phone {
+          display: none;
+        }
+      }  
+      &:hover {
+        cursor: pointer;
+      }
+      .home_tabs_item__text {
+        white-space: nowrap;
+      }
+      &.active {
+        .home_tabs_item__text {
+          @include Montserrat(16px, var(--text), 700, 150%);
+          border-bottom: 2px solid var(--text);
+        }
+      }
+    }
+  }
