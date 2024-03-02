@@ -12,18 +12,18 @@ import { changeThemeSettings } from 'utils/changeTheme';
 import './style.scss';
 
 const ThemeSwitch: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const [isLightMode, setIsLightMode] = useState(() => true);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    const themeType = isDarkMode ? ThemeTypeEnum.dark : ThemeTypeEnum.light;
-    changeThemeSettings(isDarkMode ? ThemeTypeEnum.dark : ThemeTypeEnum.light);
+    const themeType = isLightMode ? ThemeTypeEnum.light : ThemeTypeEnum.dark;
+    changeThemeSettings(isLightMode ? ThemeTypeEnum.light : ThemeTypeEnum.dark);
     dispatch(changeThemeState(themeType));
-  }, [dispatch, isDarkMode]);
+  }, [dispatch, isLightMode]);
 
   return (
     <div className="theme_switch">
-      <DarkModeToggle onChange={setIsDarkMode} checked={isDarkMode} size={50} speed={2} />
+      <DarkModeToggle onChange={setIsLightMode} checked={isLightMode} size={45} speed={2} />
     </div>
   );
 };

@@ -12,5 +12,11 @@
   "header": {
     "about_tech": "தொழில்நுட்பம் பற்றி",
     "log_in": "உள்நுழைய"
+  },
+  "footer": {
+    "footer_left_privacy_text": "©2024 Velmurugan. All rights reserved.",
+    "about_tech": "தொழில்நுட்பம் பற்றி",
+    "terms_use": "பயன்பாட்டு விதிமுறைகளை",
+    "privacy_policy": "தனியுரிமைக் கொள்கை"
   }
 }

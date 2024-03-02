@@ -67,9 +67,9 @@ body {
     min-height: 100vh;
     &_wrapper {
       width: 100%;
-      margin: 0 auto;
-      margin-top: 4rem;
-      height: 100vh;
+      margin: 4rem auto 0;
+      min-height: calc(100vh - 127px);
+      height: 100%;
       background-color: var(--backgroundVariant);
       @include phone() {
         margin-top: 4rem;

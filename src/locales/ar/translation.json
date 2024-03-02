@@ -12,5 +12,11 @@
   "header": {
     "about_tech": "حول التكنولوجيا",
     "log_in": "تسجيل الدخول"
+  },
+  "footer": {
+    "footer_left_privacy_text": "©2024 فيلموروجان. كل الحقوق محفوظة.",
+    "about_tech": "حول التكنولوجيا",
+    "terms_use": "شروط الاستخدام",
+    "privacy_policy": "سياسة الخصوصية"
   }
 }

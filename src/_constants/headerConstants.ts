@@ -16,15 +16,15 @@ export interface HeaderTabs {
   path: string;
 }
 
-// export const AuthenticatedHeaderTabs = (t: TFunction): HeaderTabs[] => [
-//   {
-//     name: t('home'),
-//     path: '/',
-//   },
-//   {
-//     name: t('tech_stack'),
-//     path: '/tech_stack',
-//   },
-// ];
+export const AuthenticatedHeaderTabs = (t: TFunction): HeaderTabs[] => [
+  {
+    name: t('home'),
+    path: '/',
+  },
+  {
+    name: t('tech_stack'),
+    path: '/tech-stack',
+  },
+];
 
 export const unauthenticatedHeaderTabs = (t: TFunction): HeaderTabs[] => [];
