@@ -4,7 +4,6 @@
   align-items: center;
   width: 100%;
   padding: 0 48px;
-  background: var(--main-white);
   position: relative;
   display: flex;
   flex-direction: row;
@@ -14,14 +13,12 @@
   @include phone() {
     padding: 0px 12px;
     gap: 5px;
-    flex-direction: column;
   }
 
   .profile {
     display: flex;
     gap: 16px;
     @include phone {
-      width: 80%;
       justify-content: space-between;
     }
     
@@ -130,14 +127,14 @@
         align-items: center;
         text-decoration: none;
         padding: 7px 7px 7px 9px;
-        @include Montserrat(16px, var(--text), 500, 140%);
+        @include Montserrat(16px, var(--white), 500, 140%);
 
         &:hover {
           cursor: pointer;
         }
 
         @include phone() {
-          @include Montserrat(14px, var(--text), 500, 140%);
+          @include Montserrat(14px, var(--white), 500, 140%);
         }
       }
 

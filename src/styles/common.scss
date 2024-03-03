@@ -40,3 +40,11 @@
     line-height: $height;
     color: $color;
   }
+
+  @mixin truncate($lines: 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

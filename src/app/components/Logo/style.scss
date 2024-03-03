@@ -1,7 +1,18 @@
-.logo_wrapper {
-  grid-column: 1/2;
-  grid-row: 1/3;
-  &:hover {
-    cursor: pointer;
-  }
-}
+// .logo_wrapper {
+//   grid-column: 1/2;
+//   grid-row: 1/3;
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
+
+
+// .logo_wrapper {
+//   display: flex;
+//   max-height: 100%;
+//   overflow: hidden;
+//   justify-content: flex-start;
+//   img {
+//     object-fit: contain;
+//   }
+// }

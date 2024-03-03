@@ -1,0 +1,18 @@
+@import '../../../../styles/common.scss';
+
+.entry_field {
+  .eye {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+    @include phone {
+      right: 16px;
+      top: 16px;
+    }
+  }
+}

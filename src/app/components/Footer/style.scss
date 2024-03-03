@@ -1,7 +1,7 @@
 @import '../../../styles/common.scss';
 
 .footer_wrapper {
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0px;
   z-index: 2;
@@ -29,9 +29,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    background-color: var(--background);
-    border-top: 1px solid var(--border);
-    box-shadow: 2px 2px 4px var(--borderLight), 10%;
+    background-color: rgba(15,23,42, 1);
 
     @include phone() {
       flex-direction: column-reverse;
@@ -52,19 +50,19 @@
       }
 
       p {
-        @include Roboto(16px, var(--text), 400, 150%);
+        @include Roboto(16px, var(--white), 400, 150%);
 
         @include phone() {
-          @include Roboto(14px, var(--text), 500, 150%);
+          @include Roboto(14px, var(--white), 500, 150%);
         }
       }
     }
 
     a,p{
-      @include Roboto(16px, var(--text), 400, 150%);
+      @include Roboto(16px, var(--white), 400, 150%);
 
       @include phone() {
-        @include Roboto(14px, var(--text), 500, 150%);
+        @include Roboto(14px, var(--white), 500, 150%);
       }
     }
   }

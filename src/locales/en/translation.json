@@ -1,7 +1,29 @@
 {
   "home_page": {
     "title": "Thiran",
-    "description": "description"
+    "description": "description",
+    "brace_list": {
+      "title": "Generate Brace Combinations",
+      "sub_title": "Generating Brace Combinations refers to the process of generating all possible combinations of balanced braces for a given number. In this context, balanced braces mean that for every opening brace, there is a corresponding closing brace, and the braces are nested properly.",
+      "enter_number": "Enter the number of braces",
+      "generated_braces": "Generated braces"
+    },
+    "min_cost": {
+      "title": "Efficient Cost Calculation Tool",
+      "sub_title": "Our Minimum Cost Calculator simplifies the process of determining the most cost-effective approach for purchasing iPods from India and Sri Lanka. By considering unit costs in each country, available stock levels, and transportation expenses, our tool calculates the minimum total cost required for procuring a specified quantity of iPods. Whether for business procurement, cost analysis, or inventory management purposes, our calculator provides accurate estimates to optimize procurement decisions and minimize expenses associated with international purchasing operations.",
+      "please_specify": "Please specify...",
+      "cost_of_ipod": "What is the cost of an iPod?",
+      "in_india": "In India",
+      "in_srilanka": "In Srilanka",
+      "exporting_cost": "What is the exporting cost of the stocks from one country to other?",
+      "trans_block": "The transportation is always done in the multiples of 10.",
+      "order_from": "Select the country from which the order is being placed",
+      "how_many": "How many units are being ordered?",
+      "calculated_result": "Calulated Result",
+      "min_cost": "Minimum cost :",
+      "units_in_india": "Units Left in India :",
+      "units_in_srlianka": "Units left in Srilanka :"
+    }
   },
   "not_found_page": {
     "title": "404 Page Not Found",

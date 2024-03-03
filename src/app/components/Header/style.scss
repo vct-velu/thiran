@@ -6,8 +6,6 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--background);
     z-index: 2;
-    border-bottom: 1px solid var(--border);
-    box-shadow: 2px 2px 4px var(--borderLight), 10%;
+    background-color: rgba(15,23,42, 1);
 }

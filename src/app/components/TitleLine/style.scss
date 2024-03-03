@@ -1,0 +1,37 @@
+@import '../../../styles/common.scss';
+.title_line {
+  margin-bottom: 32px;
+  @include phone {
+    margin-bottom: 12px;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    @include phone {
+      margin-bottom: 11px;
+    }
+    .title {
+      @include Montserrat(28px, var(--text), 400, 120%);
+      flex-shrink: 0;
+      margin-right: 16px;
+      @include phone {
+        margin-right: 8px;
+        flex-shrink: initial;
+        min-width: 70%;
+        @include Montserrat(15px, var(--text), 500, 120%);
+      }
+    }
+    .line {
+      width: 100%;
+      background-color: #e3dccf;
+      height: 1px;
+    }
+  }
+  &__text {
+    @include Roboto(18px, var(--text), 400, 150%);
+    @include phone {
+      @include Roboto(15px, var(--text), 400, 150%);
+    }
+  }
+}
