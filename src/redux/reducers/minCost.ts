@@ -6,13 +6,19 @@ import { calculateMinimumCost } from 'redux/actions/minCost';
 
 interface MinCostStateType {
   isLoading: boolean;
-  formData: MinimumCostFormType | null;
+  formData: MinimumCostFormType;
   responseData: MinimumCostResponseType | null;
 }
 
 const initialMinCostState: MinCostStateType = {
   isLoading: true,
-  formData: null,
+  formData: {
+    costInIndia: null,
+    costInSrilanka: null,
+    transportCostPer10Blocks: null,
+    unitsOrdered: null,
+    orderFrom: 'India',
+  },
   responseData: null,
 };
 
@@ -22,8 +28,7 @@ const minCostSlice = createSlice({
   reducers: {
     resetState: () => initialMinCostState,
     changeFormDataAction: (state, action: PayloadAction<Partial<MinimumCostFormType>>) => {
-      console.log(action.payload);
-      state.formData = { ...state.formData!, ...action.payload };
+      state.formData = { ...state.formData, ...action.payload };
     },
   },
   extraReducers: builder => {

@@ -13,11 +13,11 @@ export interface PasswordListErrorsType {
 }
 
 export type MinimumCostFormType = {
-  costInIndia: number;
-  costInSrilanka: number;
-  transportCostPer10Blocks: number;
-  unitsOrdered: number;
-  orderFrom: string;
+  costInIndia: number | null;
+  costInSrilanka: number | null;
+  transportCostPer10Blocks: number | null;
+  unitsOrdered: number | null;
+  orderFrom: string | null;
 };
 
 export type MinimumCostResponseType = {

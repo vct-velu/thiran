@@ -26,6 +26,7 @@ const BraceList: React.FC = () => {
           placeholder={t('home_page.min_cost.please_specify')}
           value={numBraces}
           onChange={value => setNumBraces(value)}
+          allowNegative={false}
         />
       </div>
       <button onClick={handleGenerateBraces}>{t('submit')}</button>

@@ -1,0 +1,5 @@
+{
+  "field_required": "Field is required",
+  "should_be_integer": "Should be integer",
+  "should_be_positive_number": "Should be positive number"
+}
