@@ -3,6 +3,9 @@ export type colorPalette = {
   text: string;
   textSecondary: string;
   background: string;
+  background_1: string;
+  background_2: string;
+  background_3: string;
   backgroundVariant: string;
   backgroundInverse: string;
   border: string;

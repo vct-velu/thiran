@@ -1,0 +1,104 @@
+@import "../../../styles/common.scss";
+.error_cloud {
+  background: var(--main-white);
+  border-radius: 4px;
+  border: 2px solid var(--secondary-5);
+  padding: 8px;
+  position: absolute;
+  top: 50px;
+  left: 22px;
+  z-index: 1;
+  min-width: min-content;
+  max-width: 455px;
+  @include phone() {
+    top: 43px;
+    left: 10px;
+    max-width: 315px;
+  }
+  &__triangle {
+    & > div {
+      &:nth-child(1) {
+        width: 12px;
+        border: 1px solid var(--secondary-5);
+        position: absolute;
+        left: 15px;
+        z-index: 2;
+        background: var(--secondary-5);
+      }
+      &:nth-child(2) {
+        width: 9px;
+        border: 2px solid white;
+        position: absolute;
+        left: 19px;
+        z-index: 1;
+      }
+      &:nth-child(3) {
+        width: 12px;
+        border: 1px solid var(--secondary-5);
+        position: absolute;
+        left: 20px;
+        z-index: 2;
+        background: var(--secondary-5);
+      }
+    }
+    &.top > div {
+      &:nth-child(1) {
+        top: -7px;
+        border-radius: 1px 0px 1px 1px;
+        transform: rotate(120deg);
+      }
+      &:nth-child(2) {
+        top: -2px;
+        border-radius: 0px 1px 0px 0px;
+      }
+      &:nth-child(3) {
+        top: -7px;
+        transform: rotate(62deg);
+        border-radius: 1px 1px 0px 1px;
+      }
+    }
+
+    &.bottom > div {
+      &:nth-child(1) {
+        bottom: -7px;
+        border-radius: 1px 0px 1px 1px;
+        transform: rotate(240deg);
+      }
+      &:nth-child(2) {
+        bottom: -2px;
+        border-radius: 0px 1px 0px 0px;
+      }
+      &:nth-child(3) {
+        bottom: -7px;
+        transform: rotate(298deg);
+        border-radius: 1px 1px 0px 1px;
+      }
+    }
+  }
+  &__text {
+    @include Roboto(16px, var(--secondary-dark-blue), 500, 150%);
+    @include phone() {
+      @include Roboto(14px, var(--secondary-dark-blue), 500, 150%);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    &_item {
+      display: flex;
+      gap: 6px;
+      .icon {
+        width: 15px;
+        height: 15px;
+      }
+      p {
+        @include Roboto(14px, var(--dark-gray), 400, 150%);
+        @include phone() {
+          @include Roboto(13px, var(--dark-gray), 400, 150%);
+        }
+      }
+    }
+  }
+}

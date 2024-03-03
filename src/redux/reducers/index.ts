@@ -7,6 +7,7 @@ import { Dispatch, combineReducers } from '@reduxjs/toolkit';
 import { InjectedReducersType } from '../../utils/types/injector-typings';
 
 import themeSlice from './theme';
+import minCostSlice from './minCost';
 
 /**
  * Merges the main reducer with the router state and dynamically injected reducers
@@ -17,9 +18,11 @@ export function createReducer(injectedReducers: InjectedReducersType = {}) {
   return combineReducers({
     ...injectedReducers,
     theme: themeSlice.reducer,
+    minCost: minCostSlice.reducer,
   });
 }
 
 export const onUserDataClean = (dispatch: Dispatch) => {
   dispatch(themeSlice.actions.resetState());
+  dispatch(minCostSlice.actions.resetState());
 };

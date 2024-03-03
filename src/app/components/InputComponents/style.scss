@@ -1,0 +1,71 @@
+@import '../../../styles/common.scss';
+
+.entry_field {
+  position: relative;
+  width: 100%;
+  input {
+    background-color: var(--shades-1);
+    border: 2px solid var(--shades-6);
+    border-radius: 4px;
+    padding: 13px 24px;
+    width: 100%;
+    @include Roboto(20px, var(--main-gray), 400, 150%);
+    position: relative;
+    outline: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type='number'] {
+      -moz-appearance: textfield;
+    }
+    &::placeholder {
+      color: rgba($color: var(--main-gray), $alpha: 0.6);
+    }
+
+    &:hover {
+      border: 2px solid var(--shades-7);
+    }
+
+    @include phone() {
+      padding: 10px 16px;
+      @include Roboto(16px, var(--main-gray), 400, 150%);
+    }
+  }
+
+  .error {
+    &_icon {
+      position: absolute;
+      right: 18px;
+      top: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+      @include phone {
+        right: 16px;
+        top: 16px;
+        width: 15px;
+        height: 14px;
+      }
+    }
+    &_text {
+      @include Roboto(15px, var(--secondary-5), 500, 150%);
+      color: var(--secondary-5);
+    }
+  }
+
+  &.focus {
+    input {
+      color: var(--main-dark-gray);
+      border: 2px solid var(--secondary-teal);
+    }
+  }
+  &.error {
+    input {
+      border: 2px solid var(--secondary-5) !important;
+    }
+  }
+}

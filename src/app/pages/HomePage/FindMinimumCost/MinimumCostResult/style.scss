@@ -1,0 +1,13 @@
+@import '../../../../../styles/common.scss';
+.line{
+    padding: 0px 10%;
+}
+.cost_details {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    p {
+        @include Roboto(20px, var(--text), 400, 150%);
+    }
+}

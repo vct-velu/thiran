@@ -62,15 +62,11 @@ body {
   }
   .app {
     width: 100%;
-    height: 100%;
     overflow: hidden;
-    min-height: 100vh;
     &_wrapper {
       width: 100%;
-      margin: 4rem auto 0;
-      min-height: calc(100vh - 127px);
-      height: 100%;
-      background-color: var(--backgroundVariant);
+      margin-top: 4rem;
+      background-color: var(--background);
       @include phone() {
         margin-top: 4rem;
         margin-bottom: 4rem;

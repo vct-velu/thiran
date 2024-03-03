@@ -1,0 +1,78 @@
+@import '../../../../styles/common.scss';
+
+.brace_list_container {
+  max-width: 900px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+  border: 1px solid var(--shades-2);
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 rgba(var(--neutral-1-rgb), 0.05);
+  background-color: var(--backgroundVariant);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .braces_form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    .field {
+      @include Montserrat(18px, var(--text), 400, 120%);
+      @include phone {
+        @include Montserrat(15px, var(--text), 400, 120%);
+      }
+    }
+    .entry_field {
+      width: auto;
+      input {
+        height: 50px;
+      }
+    }
+  }
+
+  button {
+    padding: 5px 15px;
+    margin: 15px auto;
+    display: block;
+    background-color: var(--secondary-teal);
+    border: 0px;
+    border-radius: 5px;
+    @include Roboto(20px, var(--white), 500, 120%);
+    @include phone {
+      @include Roboto(18px, var(--white), 500, 120%);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  .display {
+    @include Montserrat(18px, var(--text), 400, 120%);
+  }
+  .display_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    .display_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background-color: var(--background);
+      border: 1px solid var(--border);
+      box-shadow: 2px 2px 4px var(--borderLight), 10%;
+      border-radius: 4px;
+      width: 4rem;
+      height: 4rem;
+      @include Montserrat(18px, var(--text), 500, 120%);
+      @include phone {
+        @include Montserrat(13px, var(--text), 400, 120%);
+      }
+    }
+  }
+}

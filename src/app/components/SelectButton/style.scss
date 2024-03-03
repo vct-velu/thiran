@@ -1,0 +1,106 @@
+@import '../../../styles/common.scss';
+
+.select_button {
+  position: relative;
+  padding: 13px 12px 13px 24px;
+  border: 2px solid var(--shades-6);
+  border-radius: 4px;
+  background: var(--shades-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include Roboto(20px, var(--main-gray), 400, 150%);
+
+  @include phone() {
+    padding: 10px 12px 10px 16px;
+    @include Roboto(16px, var(--main-gray), 400, 150%);
+  }
+
+  &.active {
+    border: 2px solid var(--secondary-teal);
+  }
+  &:hover {
+    cursor: pointer;
+    border: 2px solid var(--shades-7);
+
+    &.active {
+      border: 2px solid var(--secondary-6);
+
+      color: var(--main-dark-gray);
+    }
+  }
+  &.entry {
+    .entry_field {
+      width: 90%;
+      input {
+        padding: unset;
+        border: none;
+      }
+    }
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__text {
+    overflow: hidden;
+    width: 85%;
+    white-space: pre-wrap;
+    &:hover {
+      cursor: pointer;
+    } 
+  }
+
+  &__circle {
+    flex-shrink: 0;
+    width: 25px;
+    height: 24px;
+    border: 0;
+    background-color: var(--main-white);
+    border-radius: 50%;
+    border: 2px solid var(--shades-6);
+    margin-right: 10px;
+    &.active {
+      border: 7px solid var(--secondary-teal);
+    }
+    @include phone() {
+      bottom: 8px;
+      right: 8px;
+    }
+  }
+  &__box {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    border: 0;
+    background-color: var(--main-white);
+    border: 2px solid var(--shades-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    &.active {
+      background: var(--secondary-teal);
+      border: 2px solid var(--secondary-teal);
+    }
+
+    @include phone() {
+      bottom: 8px;
+      right: 8px;
+    }
+  }
+  &__icon {
+    &.left {
+      svg {
+        width: 21px;
+        display: flex;
+      }
+
+      margin-right: 8px;
+    }
+  }
+}
