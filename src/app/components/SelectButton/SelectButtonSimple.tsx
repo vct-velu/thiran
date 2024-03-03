@@ -4,6 +4,7 @@ import clsx from 'clsx';
 // import ErrorCloud from 'app/components/ErrorCloud/ErrorCloud';
 
 import CheckedIcon from '../Icons/CheckedIcon';
+import ErrorCloud from '../ErrorCloud/ErrorCloud';
 
 import './style.scss';
 
@@ -61,7 +62,7 @@ const SelectButtonSimple: React.FC<SelectButtonSimpleProps> = ({
         {leftDownIcon && <div className={'select_button__icon left'}>{leftDownIcon}</div>}
         <div className="select_button__text">{title}</div>
       </div>
-      {/* {error && <ErrorCloud error text={error} />} */}
+      {error && <ErrorCloud error text={error} />}
       {fieldAligment === 'right' && fieldToClickOn}
       {rightDownIcon && <div className={'select_button__icon'}>{rightDownIcon}</div>}
     </div>
